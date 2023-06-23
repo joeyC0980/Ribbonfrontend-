@@ -1,0 +1,34 @@
+.featured{
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    z-index: 1;
+  }
+  
+  .featuredItem{
+    position: relative;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 270px;
+    flex:1
+  }
+  
+  .featuredImg{
+    width: 110%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  .featuredTitles {
+    position: absolute;
+    Top: 37px;
+    left: 8px;
+    width: 100%; /* Adjust the width as needed */
+    text-align: center;
+  
+    margin: 0 auto; 
+  }

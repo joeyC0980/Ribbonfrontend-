@@ -1,0 +1,41 @@
+.ribbon-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  
+  .ribbon-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .siImg {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .siTitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .siDesc {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .addToCartBtn {
+    background-color: #362418;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .addToCartBtn:hover {
+    background-color: #6a4d33;
+  }
+  

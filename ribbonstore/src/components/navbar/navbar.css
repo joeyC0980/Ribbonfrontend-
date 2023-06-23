@@ -1,0 +1,44 @@
+.navbar{
+    height: 50px;
+    background-image: url("https://www.churchsupplier.com/shopsite_sc/store/html/media/pins/1175.jpg");
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navContainer{
+    width: 100%;
+    max-width: 1024px;
+    color: rgb(102, 101, 111);
+    font-size: larger;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+  
+  }
+  
+  .logo{
+    font-weight: 700;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+  }
+  
+  .navButton{
+    margin-left: 20px;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #5d789d;
+  }
+  
+  .logoutBtn{
+    font:8px;
+    margin-left: 8px;
+    background-color: #7e6f80;
+    color: rgb(33, 38, 39);
+    border:none;
+    text-decoration: underline;
+    
+  
+  }

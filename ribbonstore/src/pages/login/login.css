@@ -1,0 +1,49 @@
+.login {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://www.picgifs.com/glitter-gifs/b/bow/picgifs-bow-435092.gif");
+    background-size: 720px 490px;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+ 
+  }
+
+  .lContainer {
+
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  
+  }
+  .title{
+    color:rgb(228, 61, 61);
+    margin-bottom: 5px;
+    margin-top: -109px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+  
+  }
+  
+  .lInput{
+    height: 20px;
+    width: 235px;
+    padding: 10px;
+  }
+  
+  .lButton {
+    border: none;
+    padding: 10px 20px;
+    background-color: #e34c83;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .lButton:disabled{
+    background-color: #0071c28c;
+    cursor: not-allowed;
+  }

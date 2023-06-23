@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 import { useCart } from "../cart/Usecart";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 import './ribbons.css';
 
@@ -30,10 +30,6 @@ const handleClick = async (ribbon) => {
   navigate("/cart");
 };
 
-
-
-
-
   return (
    
     <div className="ribbon-container">
@@ -44,9 +40,10 @@ const handleClick = async (ribbon) => {
           <h1 className="siTitle">{ribbon.color}</h1>
           <p className="siDesc">${ribbon.price}</p>
           <div>
-            <button className="addToCartBtn" >
-            <Link to={{ pathname: "/cart", state: { ribbon } }} className="addToCartBtn">Add to Cart</Link>
-            </button>
+            <button className="addToCartBtn" onClick={() => handleClick(ribbon)}>
+  Add to Cart
+</button>
+
           </div>
         </div>
       ))}

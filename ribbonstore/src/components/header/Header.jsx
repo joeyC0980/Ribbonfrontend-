@@ -24,7 +24,8 @@ const Header = () => {
         
              </h1>
              {!user && <button className="headerBtn" onClick={handleButtonClick}>Log in </button>}
-             {!user && <button className="headerBtn" onClick={handleLogoutClick}>Log out</button>}
+             {/* {!user && <button className="headerBtn" onClick={handleLogoutClick}>Log out</button>} */}
+             <p>username:David66 // password:1234</p>
              </>
                );
             };

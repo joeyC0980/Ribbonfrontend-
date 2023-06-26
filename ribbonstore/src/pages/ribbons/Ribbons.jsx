@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from "react-router-dom";
-import { useCart } from "../cart/Usecart";
-// import { Link } from "react-router-dom";
+import { useCart } from '../cart/UseCart';
+
 
 import './ribbons.css';
 
 const Ribbons = () => {
+  const { cart,addToCart } = useCart();
   const [ribbons, setRibbons] = useState([]); // State to store the ribbons
+  const [quantity, setQuantity] = useState(0)
 
   useEffect(() => {
     const fetchData = async () => {
@@ -22,13 +24,30 @@ const Ribbons = () => {
     fetchData();
   }, []);
 
-  const { addToCart } = useCart();
+
 
 const navigate = useNavigate();
-const handleClick = async (ribbon) => {
+const handleClick = async (e, ribbon) => {
+  setQuantity(quantity + 1)
+  e.preventDefault();
+  console.log('Adding to cart:', ribbon);
   addToCart(ribbon);
-  navigate("/cart");
+  // navigate('/cart');
 };
+
+console.log(quantity)
+
+const navigateToCart =() =>{
+  navigate('/cart');
+  console.log('this is working')
+};
+
+const getCartTotal=()=>{
+  return cart.reduce((sum,{quantity})=> sum + quantity, 0);
+
+}
+
+
 
   return (
    
@@ -40,9 +59,12 @@ const handleClick = async (ribbon) => {
           <h1 className="siTitle">{ribbon.color}</h1>
           <p className="siDesc">${ribbon.price}</p>
           <div>
-            <button className="addToCartBtn" onClick={() => handleClick(ribbon)}>
+            <button className="addToCartBtn" onClick={(e) => handleClick(e,ribbon)}>
   Add to Cart
 </button>
+<br/>
+<button  className="addToCartBtn" onClick={navigateToCart} >Go to cart ({getCartTotal()})</button>
+
 
           </div>
         </div>

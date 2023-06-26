@@ -7,7 +7,7 @@
 	align-items: center;
 	height: 50vh;
 	background-image: url("https://www.wrapitbytina.co.uk/core/wp-content/uploads/Different-Types-of-Ribbons.png");
-	background-size: 500px 270px;
+	background-size: 750px 370px;
     background-position: center;
     background-repeat: no-repeat;
 	border: 4px solid rgb(80, 162, 203);
@@ -41,7 +41,7 @@
   }
   
   .h2{
-	color:rgb(99, 90, 75);
+	color:rgb(61, 102, 234);
 	font-family:fantasy;
-	font-size: 15px;
+	font-size: 22px;
   }

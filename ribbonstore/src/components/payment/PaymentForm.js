@@ -38,7 +38,7 @@ export default function PaymentForm() {
     if (!error) {
       try {
         const { id } = paymentMethod;
-        const response = await axios.post("//localhost:3000/api/payment", {
+        const response = await axios.post("//localhost:3001/api/payment", {
           amount: 1000,
           id
         });
@@ -70,7 +70,7 @@ export default function PaymentForm() {
           </form>
         ) : (
           <div>
-            <h2 className="h2">📥<br />Awsome bean!<br />You've successfully booked.<br />You will receive an E-mail soon.</h2>
+            <h2 className="h2">📥<br />Order placed.<br />You will receive an comfirmation email soon.<br />You will receive an E-mail soon.</h2>
           </div>
         )}
       </div>

@@ -39,7 +39,7 @@ const Login = () => {
   
       <div className="lContainer">
       <div className="title">
-     Welcome to Rabbin.Inc
+     Welcome to Ribbin.Inc
     </div>
         <input
           type="text"
